@@ -50,6 +50,22 @@ Lastly, you can go to `Run` > `Run As` > `Java Application`.
 You should now see "Hello World!" printed to the eclipse console.
 You have successfully ran a program on eclipse!
 
+### Configure Java Build Path
+
+If you tried to run the program and encounter a `java.lang.ClassNotFoundException` (shown below), then you may need to configure the **Java build path** for the Eclipse project you just imported.
+
+![](https://i.imgur.com/LsIkOJq.png)
+
+To do so, hover over the *pa0-starter* project folder icon on the package explorer (see below) and right click to open up a menu. Hover over the `Build Path` option then click `Configure Build Path`.
+
+![](https://i.imgur.com/591y7Qc.png)
+
+A new window will pop up, hopefully showing that the JRE library under *Modulepath* is *JRE System Library [jdk-15] (unbound)*. To specify the correct JRE, click on the current JRE > click the `Edit` button on the left > Check the `Workspace default JRE` option on the new pop-up window > `Finish` > `Apply and Close`.
+
+![](https://i.imgur.com/Luh0ncz.png)
+
+Now, the errors highlighted on the code editor should disappear and your program should run properly. If this does not resolve your issue or there are more issues, please visit tutor hours.
+
 ## Running through the ieng6 Server or through the Terminal
 Alternatively, if you would like to use a plain text editor (i.e. vim, Atom, NotePad, VSCode etc.) and a terminal, you can compile and run the code using the following commands. This is also an option for you if you cannot install anything on your personal computer, such as a Chromebook. Note: make sure when you run the command in the same directory where the file is located. In this case, that would be the `pa0-starter/src` folder.
 
